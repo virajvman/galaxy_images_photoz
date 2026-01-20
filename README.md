@@ -7,7 +7,7 @@ This repository describes the challenge and dataset for estimating redshifts bas
 
 An important task in astronomy is to estimate the distance to a galaxy. When spectroscopic redshifts are unavailable, distances are inferred using photometric information, a problem broadly referred to as photometric redshift (photo-z) estimation.
 
-Traditional photo-z methods rely on integrated photometric quantities such as total magnitudes and colors. However, for nearby galaxies ($ \lesssim 200 Mpc$, corresponding to redshifts $z < 0.05$), galaxies are spatially resolved in ground-based imaging. In this regime, galaxy images contain rich distance information that is not captured by integrated photometry alone:
+Traditional photo-z methods rely on integrated photometric quantities such as total magnitudes and colors. However, for nearby galaxies ($\lesssim 200 Mpc$, corresponding to redshifts $z < 0.05$), galaxies are spatially resolved in ground-based imaging. In this regime, galaxy images contain rich distance information that is not captured by integrated photometry alone:
 - Angular size: Larger apparent sizes typically indicate closer galaxies
 - Internal structure: Spiral arms, star-forming regions, and morphological features are resolved 
 - Surface brightness fluctuations: The degree of smoothness versus clumpiness encodes distance-dependent information Crucially, integrated photometric properties are themselves derived from images. This means that the full image is a strictly richer data representation for redshift inference, especially at low redshift. This challenge focuses on leveraging images to estimate redshifts, rather than relying on handcrafted photometric features.
@@ -19,9 +19,7 @@ Accurate identification of nearby galaxies is essential for several areas of ast
 
 - Dark matter studies: Dwarf galaxies in the local universe provide powerful constraints on dark matter models
 
-
-Galaxy evolution: Nearby galaxies can be studied in exceptional detail, but first must be efficiently identified from large imaging surveys
-
+- Galaxy evolution: Nearby galaxies can be studied in exceptional detail, but first must be efficiently identified from large imaging surveys
 
 Traditional approaches use spectroscopy to measure distances precisely, but this is expensive — each galaxy requires dedicated telescope time. In the near term, these methods will be applied to Legacy Survey DR11. In the long term, with upcoming surveys like the Vera Rubin Observatory detecting billions of galaxies, we need photometric methods that can identify nearby, low-mass candidates from imaging alone. These methods must be efficient, as the data volumes from upcoming surveys will be Tbs.
 
@@ -51,6 +49,8 @@ For each galaxy, an image cutout is provided with the following properties:
 Note that there will be other background galaxies, stars, image artifacts in the image cutouts, however, as noted before, the cutouts are centered on the galaxy whose redshift we know.
 
 Each galaxy has a cutout of size 128x128, however, the same performance (and better memory usage) could be achieved with a smaller cutout like 64x64. However, we are not sure which cutout size is better. 
+
+More information on images can be found [here](https://www.legacysurvey.org/dr9/description/).
 
 
 #### Metadata
