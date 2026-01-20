@@ -1,16 +1,16 @@
 # DESI DR1 Galaxy Image Cutouts Dataset
 
-This repository describes an image dataset constructed from the **DESI Data Release 1 (DR1)** catalog.
+This repository describes the image cutout dataset constructed from the **DESI Data Release 1 (DR1)** catalog.
 
 ## Dataset Overview
 
 The dataset contains **249,999 galaxies** drawn from DESI DR1 with r-band magnitude of r<21.2.  
 The sample is composed of:
-- A population of ** dwarf galaxies**
+- A population of dwarf galaxies with $M_{\bigstar} < 10^{9.25} M_{\odot}$
 - Galaxies satisfying [Darragh-Ford et al. 2022](https://ui.adsabs.harvard.edu/abs/2023ApJ...954..149D) ``z < 0.03`` complete photometric cuts.
-- A **randomly selected comparison sample** from the broader DESI DR1 catalog
+- A randomly selected comparison (with above magnitude cut) from the broader DESI DR1 catalog
 
-Basic quality and cleaning cuts were applied to the source catalogs prior to image construction (for example, removal of obvious artifacts and invalid photometric entries).
+Basic quality and cleaning cuts were applied to the source catalogs prior to image construction.
 
 ## Image Cutouts
 
@@ -25,8 +25,8 @@ For each galaxy, an image cutout is provided with the following properties:
 ## Metadata
 
 Each image is associated with catalog-level metadata including:
-- DESI `TARGETID` (``int64``)
-- Right ascension (RA) in degrees (``float64``)
-- Declination (DEC) in degrees (``float64``)
-- Spectroscopic redshift (`Z`) (``float32``)
+- DESI object identifier `TARGETID` (``int64``)
+- Right ascension (``RA``) in degrees (``float64``)
+- Declination (``DEC``) in degrees (``float64``)
+- Spectroscopic redshift (``Z``) (``float32``)
 
