@@ -2,7 +2,6 @@
 
 This repository describes the challenge and dataset for estimating redshifts based on images.
 
-
 ## Context
 
 An important task in astronomy is to estimate the distance to a galaxy. When spectroscopic redshifts are unavailable, distances are inferred using photometric information, a problem broadly referred to as photometric redshift (photo-z) estimation.
@@ -43,15 +42,14 @@ For each galaxy, an image cutout is provided with the following properties:
 - Each of the 3 layers corresponds to different photometric filters: **g, r, z**
 - Pixel scale: **0.262 arcsec/pixel**
 - Centered on the galaxy coordinates
-- Images are from **Legacy Surveys imaging** DR9
+- These are coadded images are from Legacy Surveys imaging DR9.
 - The images are oriented with North towards the top, however, the image orientation will not have any impact on galaxy distance. 
 
 Note that there will be other background galaxies, stars, image artifacts in the image cutouts, however, as noted before, the cutouts are centered on the galaxy whose redshift we know.
 
 Each galaxy has a cutout of size 128x128, however, the same performance (and better memory usage) could be achieved with a smaller cutout like 64x64. However, we are not sure which cutout size is better. 
 
-More information on images can be found [here](https://www.legacysurvey.org/dr9/description/).
-
+The image cutouts are already fully reduced, flux calibrated and science ready, so when training the model you can either use them directly, or convert them to rgb images using the color transformation provided in ``sdss_rgb`` function in ``code.py``.
 
 #### Metadata
 
