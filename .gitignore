@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.fits
+*.fits.gz
+*.h5
+*.hdf5
+*.jpg
+*.png
+*.log
+.DS_Store
