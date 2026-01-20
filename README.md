@@ -2,12 +2,14 @@
 
 This repository describes the image cutout dataset constructed from the **DESI Data Release 1 (DR1)** catalog.
 
+Path on Sherlock: ``/oak/stanford/orgs/kipac/users/virajvm/galaxy_images_photoz/galaxy_images_128.h5``
+
 ## Dataset Overview
 
 The dataset contains **249,999 galaxies** drawn from DESI DR1 with r-band magnitude of r<21.2.  
 The sample is composed of:
 - A population of dwarf galaxies with $M_{\bigstar} < 10^{9.25} M_{\odot}$
-- Galaxies satisfying [Darragh-Ford et al. 2022](https://ui.adsabs.harvard.edu/abs/2023ApJ...954..149D) ``z < 0.03`` complete photometric cuts.
+- Galaxies satisfying [Darragh-Ford et al. 2022](https://ui.adsabs.harvard.edu/abs/2023ApJ...954..149D) z < 0.03 complete photometric cuts.
 - A randomly selected comparison (with above magnitude cut) from the broader DESI DR1 catalog
 
 Basic quality and cleaning cuts were applied to the source catalogs prior to image construction.
